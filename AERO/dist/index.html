@@ -9,6 +9,13 @@
 </head>
 
 <body>
+    <script>
+      function gotoLink(link) {
+        //   console.log(link.value);
+        location.href = link.value;
+        //   window.open(link.value);
+      }
+    </script>
     <header class="text-gray-600 body-font">
         <div class="contain-content flex  p-5 flex-col md:flex-row items-center bg-slate-200">
             <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
@@ -30,6 +37,8 @@
 
             <div class="flex-shrink ">
             <button
+                onclick="gotoLink(this)"
+                value="login.html"
                 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 focus:outline-none hover:bg-black rounded text-sm mt-4 md:mt-0 text-slate-100">Login
                 <!-- <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     class="w-4 h-4 ml-1 justify-center" viewBox="0 0 24 24">
