@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login Page</title>
+  </head>
+  <body>
+    <header class="text-gray-600 body-font">
+      <div
+        class="contain-content flex p-5 flex-col md:flex-row items-center bg-gray-200"
+      >
+        <!-- <div class="absolute inset-0 bg-[url(assests/ooorganize.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div> -->
+        <!--buggy div-->
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          href="index.html"
+        >
+          <img
+            src="assets/logo_1.png"
+            class="ml-2 rounded"
+            height="40px"
+            width="70px"
+          />
+        </a>
+        <nav
+          class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border- md:border-gray-400 flex flex-wrap items-center text-base justify-center"
+        >
+          <a class="mr-5 hover:text-gray-900" href="career.html">Career</a>
+          <a class="mr-5 hover:text-gray-900" href="#">Masterclasses</a>
+          <a class="mr-5 hover:text-gray-900" href="Openings.html"
+            >Opportunities</a
+          >
+          <a class="mr-5 hover:text-gray-900" href="Course.html"
+            >Certifications</a
+          >
+
+          <!-- <a class="md:mr-5 hover:text-gray-900" href="#">Login</a> -->
+        </nav>
+
+        <div class="flex-shrink">
+          <!-- <button
+                onclick="gotoLink(this)"
+                value="login.html" -->
+
+          <!-- <a class="mr-5 hover:text-gray-900" href="login.html">Login</a>
+          <button
+            class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 focus:outline-none hover:bg-black rounded text-sm mt-4 md:mt-0 text-slate-100"
+          >
+            <a href="signup.html">Register</a>
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-4 h-4 ml-1 justify-center"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg> -->
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="flex items-center justify-center min-h-screen bg-gray-100">
+      <div
+        class="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0"
+      >
+        <!-- left side -->
+        <div class="flex flex-col justify-center p-8 md:p-14">
+          <span class="mb-3 text-4xl font-bold">Welcome back</span>
+          <span class="font-light text-gray-400 mb-8">
+            Please enter your details
+          </span>
+          <div class="py-4">
+            <span class="mb-2 text-md">Username or Email</span>
+            <input
+              type="text"
+              class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="py-4">
+            <span class="mb-2 text-md">Password</span>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              class="w-full p-2 border border-gray-300 rounded-md placeholder:font-light placeholder:text-gray-500"
+            />
+          </div>
+
+          <div class="flex justify-between w-full py-4">
+            <div class="mr-24">
+              <input type="checkbox" name="ch" id="ch" class="mr-2" />
+              <span class="text-md">Remember me</span>
+            </div>
+           
+            <!-- <div class="mr-24"> -->
+                <!-- <input type="checkbox" name="ch" id="ch" class="mr-2" /> -->
+                <!-- <span class="text-md"><a href="/AERO/dist/index.html">Forgot Password</a></span> -->
+              <!-- </div> -->
+            <!-- <span class="text-md">
+                
+            </span> -->
+        
+            <!-- <span class="font-bold text-md">Forgot password</span> -->
+          </div>
+
+          <button
+            class="w-full bg-black text-white p-2 rounded-lg mb-6 hover:bg-white hover:text-black hover:border hover:border-gray-300"
+          >
+            Sign in
+          </button>
+          <button
+            class="w-full border border-gray-300 text-md p-2 rounded-lg mb-6 hover:bg-gray-600 hover:text-white"
+          >
+            <!-- <img src="google.svg" alt="img" class="w-6 h-6 inline mr-2" /> -->
+            Sign in with Google
+          </button>
+          <div class="text-center text-gray-400">
+            Dont'have an account?
+            <!-- <span class="font-bold text-black">Sign up for free</span> -->
+             <a href="nsignup.html"><b>Sign up for free</b></a>
+          </div>
+        </div>
+        <!-- {/* right side */} -->
+        <div class="relative">
+          <!-- <img
+            src="image.jpg"
+            alt="img"
+            class="w-[400px] h-full hidden rounded-r-2xl md:block object-cover"
+          /> -->
+          <!-- text on image  -->
+          <div
+            class="absolute hidden bottom-10 right-6 p-6 bg-white bg-opacity-30 backdrop-blur-sm rounded drop-shadow-lg md:block"
+          ></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
